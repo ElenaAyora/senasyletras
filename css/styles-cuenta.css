@@ -1,0 +1,304 @@
+/* ######### LOGIN y SIGN ######### */
+/* Contenedor principal del formulario de login */
+#login-container {
+    background-color: white;
+    margin-top: 10%;   /* Ajustado para evitar ser tapado por la barra de navegación */
+    margin-left: auto;
+    margin-right: auto;
+    width: 32%;         /* Ancho fijo y centrado */
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);   /* Crea un efecto 3D. */
+    text-align: center;
+}
+
+/* Título del formulario de login */
+#login-title {
+    text-align: center;
+    font-size: 45px;
+    margin: 2%;
+}
+#login-recuperar {
+    text-align: center;
+    font-size: 35px;
+    margin: 2%;
+}
+/* Estilo para cada grupo de formulario (label a la izquierda e input a la derecha) */
+.form-group {
+    font-size: 80%;      /* Tamaño de la letra */
+    font-weight: bold;
+    margin-bottom: 4%;   /* Espacio entre grupos */
+    display: flex;       /* Flexbox para alinear horizontalmente */
+    align-items: center; /* Alineación vertical centrada */
+    justify-content: space-between; /* Espaciado entre label e input */
+}
+
+/* Label alineado a la izquierda */
+.form-group label {
+    flex: 1;             /* Ocupa un espacio proporcional */
+    text-align: left;    /* Alinea el texto a la izquierda */
+}
+
+/* Input alineado a la derecha */
+.form-group input {
+    background-color: #eeeee4;
+    border-radius: 8px;
+    border: none;
+    width: 80%;          /* Controla el ancho del input */
+}
+
+/* Input del formulario */
+.form-control {
+    font-size: 80%;
+    background-color: #eeeee4;
+    border-radius: 8px;
+    border: none;
+    width: 100%;         /* Ajusta el ancho al contenedor */
+    padding: 2.5%;
+}
+
+/* Cambia el color de fondo cuando el input tiene texto */
+.form-control.input-filled {
+    background-color: #c6d2fb;
+}
+
+/* Botón de login */
+.form-button-container {
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+#login-button {
+    width: auto; /* Ocupa todo el ancho disponible */
+    cursor: pointer;
+    padding: 3%;
+    border-radius: 10px;
+    border: none;
+    background-color: #c6d2fb;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0 auto;
+}
+
+#login-button:hover {
+    background-color: #b0c0e8;
+    transform: scale(1.05); /* Efecto de agrandamiento al pasar el cursor */
+}
+
+@media screen and (max-width: 1024px) {
+    #login-container {
+        width: 70%;
+        text-align: center;
+        padding: 2%;
+    }
+    #login-title {
+        font-size: 50px;
+        margin-bottom: 2%;
+    }
+    .form-group {
+        font-size: 100%;
+        margin-bottom: 1%;
+        display: flex;
+        align-items: center;
+    }
+    .form-group label {
+        flex: 1;
+        text-align: left;
+    }
+    .form-group input {
+        width: 85%;
+    }
+    .form-control {
+        font-size: 90%;
+    }
+    #login-button {
+        padding: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #login-container {
+        width: 70%;
+        text-align: center;
+        padding: 2%;
+    }
+    #login-title {
+        font-size: 50px;
+        margin-bottom: 2%;
+    }
+    .form-group {
+        font-size: 80%;
+        margin-bottom: 2%;
+        display: flex;
+        align-items: center;
+    }
+    .form-group label {
+        flex: 1;
+        text-align: left;
+    }
+    .form-group input {
+        width: 84%;
+    }
+    .form-control {
+        font-size: 80%;
+    }
+    #login-button {
+        padding: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #login-container {
+        width: 80%;
+        text-align: center;
+        padding: 2%;
+    }
+    #login-title {
+        font-size: 45px;
+        margin-bottom: 2%;
+    }
+    .form-group {
+        font-size: 80%;
+        margin-bottom: 2%;
+        display: flex;
+        align-items: center;
+    }
+    .form-group label {
+        flex: 1;
+        text-align: left;
+    }
+    .form-group input {
+        width: 82%;
+    }
+    .form-control {
+        font-size: 80%;
+    }
+    #login-button {
+        padding: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #login-container {
+        width: 90%;
+        text-align: center;
+        padding: 2%;
+    }
+    #login-title {
+        font-size: 45px;
+        margin-bottom: 2%;
+    }
+    .form-group {
+        font-size: 75%;
+        margin-bottom: 2%;
+        display: flex;
+        align-items: center;
+    }
+    .form-group label {
+        flex: 1;
+        text-align: left;
+    }
+    .form-group input {
+        width: 83%;
+    }
+    .form-control {
+        font-size: 80%;
+    }
+    #login-button {
+        padding: 2%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #login-container {
+        width: 90%;
+        text-align: center;
+        padding: 2%;
+    }
+    #login-title {
+        font-size: 55px;
+        margin-bottom: 2%;
+    }
+    .form-group {
+        font-size: 85%;
+        margin-bottom: 2%;
+        display: flex;
+        align-items: center;
+    }
+    .form-group label {
+        flex: 1;
+        text-align: left;
+    }
+    .form-group input {
+        width: 77%;
+        padding: 3%;
+    }
+    .form-control {
+        font-size: 80%;
+    }
+    #login-button {
+        padding: 4%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #login-container {
+        width: 90%;
+        text-align: center;
+        padding: 3%;
+    }
+    #login-title {
+        font-size: 50px;
+        margin-bottom: 3%;
+    }
+    .form-group {
+        font-size: 80%;
+        margin-bottom: 2%;
+        display: flex;
+        align-items: center;
+    }
+    .form-group label {
+        flex: 1;
+        text-align: left;
+    }
+    .form-group input {
+        width: 75%;
+        padding: 4%;
+    }
+    .form-control {
+        font-size: 80%;
+    }
+    #login-button {
+        padding: 4%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #login-container {
+        width: 93%;
+        text-align: center;
+        padding: 3%;
+    }
+    #login-title {
+        font-size: 50px;
+        margin-bottom: 4%;
+    }
+    .form-group {
+        font-size: 72%;
+        margin-bottom: 3%;
+        display: flex;
+        align-items: center;
+    }
+    .form-group label {
+        flex: 1;
+        text-align: left;
+    }
+    .form-group input {
+        width: 74%;
+    }
+    .form-control {
+        font-size: 80%;
+    }
+    #login-button {
+        padding: 4%;
+    }
+}

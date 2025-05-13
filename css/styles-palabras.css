@@ -1,0 +1,100 @@
+.palabra-info-container {
+    margin: 2%;
+}
+
+.palabra-nombre h2 {
+    text-align: center;
+}
+
+/* ######### VIDEOS ######### */
+/* Columna en la que están lo(s) vídeo(s) */
+.row-video {
+    display: flex;
+    flex-wrap: wrap;  /* Permite que los videos se ajusten al tamaño de la pantalla */
+    gap: 1%;  /* Establece un espacio de 1% entre los videos */
+    margin: 1% 3%;
+}
+
+/* Img video no disponible */
+.row-video img {
+    border-radius: 30px;
+}
+.mensaje-video {
+    align-content: center;
+    margin-left: 10%;
+    color:brown;
+}
+
+/* Contexto de lo(s) video(s) */
+.context-video-box {
+    margin: 1%;
+    padding: 2%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 30%;     /* Ancho de cada video */
+    height: 20%;    /* Mantén la altura adecuada */
+}
+.context-video-box h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+.context-video-box p {
+    margin: 3%;
+    color: black;
+}
+.context-video-box video {
+    width: 100%;    /* Ocupa el 100% del contenedor */
+    height: auto;   /* Mantiene la proporción del video */
+    border-radius: 12px;
+}
+
+
+/* ######### DELETREO DACTILOLÓGICO ######### */
+.deletreo{
+    margin: 1%;
+}
+/* Columna en la que está el deletreo en dactilológico */
+.row-dactilologico {
+    margin: 1%;
+    display: flex;                    /* Usamos Flexbox para centrar el contenido */
+    justify-content: center;          /* Centra las imágenes en el eje horizontal */
+    align-items: center;              /* Centra las imágenes en el eje vertical */
+    flex-wrap: wrap;  /* Asegura que las imágenes se ajusten al tamaño de la pantalla */
+    gap: 1%;                          /* Establece un espacio de 1% entre las imágenes */
+}
+.row-dactilologico img {
+    width: 10%;     /* Ajusta el tamaño de las imágenes */
+    border-radius: 8px;
+}
+
+/* Estilo del overlay que cubre toda la pantalla */
+.overlay {
+    position: fixed; /* Posiciona el overlay de forma fija */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con opacidad */
+    display: none;  /* Inicialmente oculto */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;  /* Asegura que esté por encima de otros elementos */
+}
+/* Estilo de la imagen ampliada dentro del overlay */
+.expanded-img {
+    max-width: 80%;      /* Limita el ancho máximo de la imagen */
+    max-height: 80%;     /* Limita la altura máxima */
+    object-fit: contain; /* Mantiene la imagen proporcional */
+}
+/* Estilo del botón de cerrar (X) */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 36px;
+    cursor: pointer;
+    z-index: 10000;
+}

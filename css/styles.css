@@ -1,0 +1,483 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; /* Indica como se calcula las dimensiones de los elementos */
+  vertical-align: baseline;
+}
+body {
+    background-color: #eeeee4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    display: block;
+}
+svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+.mensaje-final-pag p {
+    text-align: center;
+    font-size: 10px;
+    margin: 1%;
+}
+.mensaje-final-pag2 p {
+    text-align: center;
+    font-size: 10px;
+    margin: 1%;
+}
+.mensaje-final-pag3 p {
+    text-align: center;
+    font-size: 10px;
+    margin: 1%;
+}
+.paginacion {
+    text-align: center;
+    margin-top: 6%;
+}
+
+.paginacion a {
+    font-weight: bold;
+    padding: 8px 12px;
+    color: black;
+    margin: 0 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.paginacion a.pagina-activa {
+    color: #007bff;
+}
+
+.paginacion a:hover {
+    color: #f58080;
+}
+
+/*  ######### MENÚ HAMBURGUES #########  */
+.header{
+    width:100%;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+.header .button{
+    display: none;
+}
+.header .svg{
+    width:2em;
+    height:2em;
+    fill:white;
+}
+.header .nav-menu{
+    display: flex;
+    align-items: center;
+  
+}
+
+/* Hace referencia a la clase del "ul" de la navegación*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-menu-right {
+    display: flex;
+    justify-content: flex-end; /* Mueve los elementos al extremo derecho */
+    align-items: center;
+    margin-left: auto; /* Empuja este menú hacia la derecha */
+}
+
+.nav-menu-item {
+    margin: auto;       /* Para que los elementos de la barra de navegación aparezcan bien*/
+    cursor: pointer;    /* Al pasar por encima aparece una manita en lugar del cursos normal */
+}
+.nav-menu-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.nav-menu-link:hover {
+    background-color: #c6d2fb;
+}
+
+/* Barra de navegación */
+.nav-search-container {
+    display: flex;               /* Para colocar el input y el botón en la misma línea */
+    align-items: center;         /* Centra verticalmente */
+    justify-content: flex-start; /* Alinea los elementos a la izquierda */
+    width: auto;                 /* Ajusta el contenedor al contenido */
+}
+/* El formulario no debe tener márgenes ni paddings que alteren la disposición */
+.nav-search-container form {
+    display: flex;              /* Hace que el formulario se comporte como un flex container */
+    align-items: center;        /* Centra verticalmente los elementos */
+    margin: 0;                  /* Elimina el margen por defecto */
+    padding: 0;                 /* Elimina el padding por defecto */
+    width: auto;                /* Ajusta el formulario al contenido */
+}
+/* Barra de navegación del buscador */
+.nav-search {
+    padding: 10px;
+    border: none;   /* Se eliminan los bordes */
+    outline: none;  /* Se elimina el contorno */
+    width: 100%;    /* Ajusta el ancho del campo de búsqueda */
+    height: 40px;   /* Ajusta la altura del input */
+}
+.nav-search-button {
+    background-color: #c6d2fb;  /* Color de fondo del botón */
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    height: 40px;                 /* Igualar la altura al input */
+    display: flex;
+    align-items: center;          /* Centra la imagen dentro del botón */
+    justify-content: center;      /* Centra la imagen dentro del botón */
+}
+.nav-search-button img {
+    width: 20px;    /* Tamaño de la imagen dentro del botón */
+    height: auto;
+}
+
+.nav-search-button:hover {
+    background-color: #b0c0e8;  /* Cambio de color al hacer hover */
+}
+
+
+/* ######### USUARIOS QUE HAN INICIADO SESIÓN ######### */
+.saludo{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.nav-menu-link-mensaje {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.nav-menu-link-mensaje:hover {
+    background-color: #c6d2fb;
+}
+.logout:hover {
+    background-color: #f58080;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header .button {
+        display: block;
+        cursor: pointer;
+    }
+    .header .nav {
+        width: 100%;
+        height: 0;
+        pointer-events: none;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .nav.activo {
+        height:auto;
+        pointer-events: auto;
+        margin-bottom: 2%;
+    }
+    .nav-menu, .nav-menu-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-menu-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 6% 0;
+        display: block;
+    }
+    .nav-menu-link:hover {
+        background-color: #c6d2fb;
+        transition: background-color 0.3s ease;
+    }
+    .logout:hover {
+        background-color: #f58080;
+    }
+
+    .nav-menu-link-mensaje img{
+        display: none;  /* Oculta los iconos */
+    }
+
+    .nav-menu-item .nav-link {
+        display: inline-block;  /* Muestra los enlaces de texto */
+    }
+
+    .nav-menu-item .nav-link.mensaje-nav::after {
+        content: "Mensajes"; /* Agrega texto al icono de mensaje */
+    }
+
+    .nav-menu-item .nav-link.juegos-nav::after {
+        content: "Juegos"; /* Agrega texto al icono de juegos */
+    }
+}
+
+
+/* ######### CATEGORÍAS ("RECUADROS") ######### */
+.categorias-container {
+    display: grid;                          /* Usamos Grid para crear la estructura en filas y columnas */
+    grid-template-columns: repeat(6, 1fr);  /* 6 columnas de igual tamaño */
+    margin: 2%;                             /* Espaciado interno dentro del contenedor */
+    justify-content: center;                /* Centrar las columnas horizontalmente */
+    grid-column-gap: 1%;                    /* Espaciado entre las columnas */
+    grid-row-gap: 3%;                       /* Espacio de 30px entre las filas */
+    padding-bottom: 2%;
+}
+.categoria {
+    text-align: center;         /* Centra el texto y la imagen dentro de la tarjeta */
+    align-items: center;        /* Centra horizontalmente los elem. dentro del contenedor. */
+    justify-content: center;    /* Centra verticalmente los elem. dentro del contenedor. */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);   /* Crea un efecto 3D. */
+    cursor: pointer;
+    background-color: white;
+    padding-top: 5%;
+}
+/* Hacer las imágenes responsivas */
+.img-categ {
+    width: 100%;             /* Anchura de cada una de la imágenes*/
+    height: auto;           /* Mantener la proporción de la imagen */
+    max-width: 50%;         /* Limita el tamñano de la imágen*/
+    margin-bottom: 10px;    /* Espaciado entre la imagen y el texto */
+    padding-top: 3%;
+}
+/* Títulos de las categorías */
+.categoria b {
+    font-size: 16px;    /* Tamaño de la letra */
+    margin: 0;          /* Elimina márgenes adicionales del texto */
+}
+
+
+/* ######### VENTANA DE MENSAJES DE USUARIOS ######### */
+/* ######### Mensaje del usuario para el administrador ######### */
+.enviar-mensaje-container {
+    margin: 2%;
+}
+
+.contenedor-mensaje {
+    background-color: white;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.titulo-enviar-mensaje {
+    padding-bottom: 1%;
+}
+
+.mensaje {
+    width: 100%;
+    height: 60px;
+    background-color: #eeeee4;
+    border: none;
+    border-radius: 10px;
+    padding: 0.75%;
+    margin-bottom: 1%;
+}
+
+.enviar-mensaje-botton {
+    width: 10%; /* Ocupa todo el ancho disponible */
+    cursor: pointer;
+    padding: 1%;
+    margin-top: 0.5%;
+    border-radius: 10px;
+    border: none;
+    background-color: #c6d2fb;
+}
+
+
+/* ######### VENTANA DE MENSAJES DE USUARIOS ######### */
+/* ######### Detalles del mensaje mandado por usuarios ######### */
+.mensaje-detalle-container {
+    padding: 1%;
+    background-color: white;
+    border-radius: 10px;
+}
+.info-detalles-mensaje {
+    background-color: #e1f2ff;
+    border-radius: 10px;
+    padding: 1%;
+}
+.info-detalles-header {
+    display: flex;
+    gap: 10%; /* Espaciado entre los elementos de la fila*/
+}
+.mensaje-usuario {
+    padding: 0.5%;
+}
+/* Area de texto para responder el mensaje del usuario */
+.respuesta {
+    width: 100%;
+    background-color: #eeeee4;
+    border: none;
+    border-radius: 10px;
+    padding: 1%;
+}
+/* Contenedor para los botones del formulario */
+.response-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Coloca un extremo en cada lado */
+}
+/* Estilos para el botón de Enviar Respuesta */
+.respuesta-botton {
+    cursor: pointer;
+    padding: 1%;
+    border-radius: 4px;
+    border: none;
+    background-color: #c6d2fb;
+}
+/* Estilos para el botón Cerrar */
+.close-button {
+    padding: 1%;
+    background-color: #ffd399;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* Efecto hover para el botón Cerrar */
+.close-button:hover {
+    background-color: #d32f2f;
+}
+
+
+/* ######### PALABRAS ASOCIADA A UNA CATEGORIA CONCRETA ######### */
+/* palabra seleccionada mediante consulta sql(php) -> aparece en el texto inicial de la página (h2)*/
+.texto-azul {
+    color: blue;
+    text-transform: uppercase
+}
+/* Nombre de la categoria seleccionada */
+.categoria-nombre h2 {
+    margin: 1%;
+    text-align: center;
+}
+.palabras-container {
+    display: grid;                          /* Usamos Grid para crear la estructura en filas y columnas */
+    grid-template-columns: repeat(6, 1fr);  /* 6 columnas de igual tamaño */
+    margin: 1% 4%;                             /* Ajusta el espacio entre el "navegador" y los cuadrados con las caregorias */
+    justify-content: center;                /* Centrar las columnas horizontalmente */
+    grid-column-gap: 2%;                    /* Espaciado entre las columnas */
+    grid-row-gap: 8%;                       /* Espacio de 30px entre las filas */
+}
+/* Estilo adicional para el elemento palabra-item */
+.palabra-item {
+    text-align: center;         /* Centra el texto y la imagen dentro de la tarjeta */
+    align-items: center;        /* Centra horizontalmente los elem. dentro del contenedor. */
+    justify-content: center;    /* Centra verticalmente los elem. dentro del contenedor. */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);   /* Crea un efecto 3D. */
+    cursor: pointer;
+    background-color: white;
+    padding: 5%;
+}
+/* Estilo para el enlace de cada palabra */
+.palabra-link {
+    text-decoration: none;
+    color: blue;  /* Color de texto deseado */
+}
+/* Evitar que el color cambie al pasar el cursor */
+.palabra-link:hover {
+    color: blue;  /* Mantener el mismo color en el hover */
+    background-color: transparent; /* Evitar cambios de fondo en el hover */
+}
+
+
+/* ######### PAGINA JUEGOS ######### */
+.juegos-container {
+    margin: 2%;
+}
+.juegos {
+    padding: 2%;
+    background-color: white;
+    border-radius: 10px;
+}
+.juegos h1 {
+    margin-bottom: 2%;
+}
+/* Contenedor principal de los juegos */
+.container {
+    display: flex; /* Coloca los elementos en fila */
+    justify-content: center; /* Centra los juegos horizontalmente */
+    gap: 20px; /* Espacio entre los juegos */
+    flex-wrap: wrap; /* Permite que los juegos se ajusten en pantallas pequeñas */
+}
+
+/* Estilos individuales para cada juego */
+.juego1, .juego2 {
+    background-color: #f8f8f8; /* Color de fondo */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Imágenes de los juegos */
+.juego1 img, .juego2 img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del div */
+    height: 200px; /* Altura fija para ambas imágenes */
+    object-fit: contain; /* Asegura que la imagen se ajuste sin recortarse */
+    border-radius: 10px;
+    background-color: white; /* Añade un fondo para evitar espacios vacíos feos */
+}
+
+/* Botones de los juegos */
+.game-link {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+.game-link:hover {
+    background-color: darkblue;
+}
+
+/* ######### LOGROS CONSEGUIDOS POR LOS USUARIOS ######### */
+.insignias-container {
+    display: grid;                          /* Usamos Grid para crear la estructura en filas y columnas */
+    grid-template-columns: repeat(6, 1fr);  /* 6 columnas de igual tamaño */
+    justify-content: center;                /* Centrar las columnas horizontalmente */
+}
+.img-insignia {
+    width: 70%;             /* Anchura de cada una de la imágenes*/
+    margin-left: 15%;         /* Limita el tamñano de la imágen*/
+}

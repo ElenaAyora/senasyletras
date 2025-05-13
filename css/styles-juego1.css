@@ -1,0 +1,169 @@
+/* ######### JUEGO 1 ######### */
+.contenedor-juego1 {
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    margin: 5% 35%;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+.video-container-juego1 {
+    transition: opacity 0.3s ease-in-out; /* Para un efecto suave */
+    position: relative; /* Asegura que siga en su posición sin afectar el diseño */
+    z-index: 1; /* Prioridad baja */
+}
+
+.video-box-juego1 {
+    margin: 4% 2%;
+}
+.video-box-juego1 video {
+    border-radius: 10px;
+    z-index: -1; 
+}
+.contexto-video-juego1 {
+    padding-top: 3%;
+}
+.input-juego-juego1 input {
+    padding: 2% 1%;
+    width: 80%;
+    border-radius: 5px;
+    border: 2px solid rgb(62, 62, 62);
+}
+.buttons-juego1 {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente (si es necesario) */
+    gap: 10%;                /* Espacio entre botones */
+    margin-top: 4%;         /* Espacio superior */
+    width: 100%;              /* Asegura que ocupe todo el ancho */
+}
+.boton-juego1-validar {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: auto;
+    padding: 4%;
+}
+.boton-juego1-saltar {
+    background-color: #f0ad4e;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: auto;
+    padding: 4%;
+}
+
+
+/* Estilos para la ventana modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    background-color: #eeeee4;
+    margin: 20% auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+}
+#cerrarModal {
+    margin-top: 10px;
+    padding: 5px 15px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .contenedor-juego1 {
+        margin: 6% 30%;
+        padding-bottom: 2%;
+    }
+    .video-box-juego1 {
+        margin: 0% 0%;
+        padding-bottom: 3%;
+    }
+    .video-box-juego1 video {
+        width: 90%;
+        margin-top: 3%;
+        z-index: -1;
+    }
+    .contexto-video-juego1 {
+        padding-bottom: 4%;
+    }
+    .input-juego-juego1 input {
+        padding: 2%;
+        width: 90%;
+        border-radius: 5px;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    .buttons-juego1 {
+        margin-top: 2%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .contenedor-juego1 {
+        margin: 10% 10%;
+        padding: 4%;
+    }
+    .contexto-video-juego1 {
+        padding-bottom: 4%;
+    }
+    .buttons-juego1 {
+        gap: 20%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .contenedor-juego1 {
+        margin: 8% 5%;
+        padding: 4%;
+    }
+    .contexto-video-juego1 {
+        padding-bottom: 4%;
+    }
+    .buttons-juego1 {
+        gap: 20%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .contenedor-juego1 {
+        margin: 10% 5%;
+        padding-bottom: 4%;
+    }
+    .titulo-juego1 {
+        padding-top: 4%;
+    }
+    .video-box-juego1 video {
+        width: 90%;
+        margin-top: 3%;
+        z-index: -1;
+    }
+    .contexto-video-juego1 {
+        padding-bottom: 4%;
+    }
+    .input-juego-juego1 input {
+        padding: 2%;
+        width: 91%;
+        border-radius: 5px;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    .buttons-juego1 {
+        margin-top: 4%;
+    }
+}

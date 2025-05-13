@@ -1,0 +1,159 @@
+/* ######### JUEGO 2 ######### */
+.contenedor-juego2 {
+    margin: 1%;
+}
+.contenedor-juego2 h1 {
+    text-align: center;
+}
+.video-container-juego2 {
+    margin: 1% 2%;
+    display: flex;
+    justify-content: center;  /* Centrar los videos */
+    gap: 4%;  /* Espaciado entre videos */
+}
+.video-box-juego2 {
+    display: flex;
+    flex-direction: column;  /* Asegura que los elementos estén en columna */
+    align-items: center;  /* Centra los elementos dentro de cada video-box */
+    justify-content: space-between;
+    width: 220px; /* Tamaño fijo para cada video-box */
+    text-align: center;
+    border-radius: 20px;
+}
+.video-box-juego2 video {
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    width: 100%;
+    height: 140px;
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 3%;
+}
+
+select {
+    margin-top: 10px;  /* Espacio entre el video y el select */
+    padding: 5px;
+    width: 100%;  /* Ocupa todo el ancho del div */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.palabra-seleccionada {
+    width: 100%; /* Asegura que el select ocupe todo el ancho disponible */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+.buttons-juego2 {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente (si es necesario) */
+    gap: 6%;                /* Espacio entre botones */
+    margin-top: 2%;         /* Espacio superior */
+    width: 100%;              /* Asegura que ocupe todo el ancho */
+}
+.boton-juego2-validar {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: auto;
+    padding: 1%;
+}
+.boton-juego2-saltar {
+    background-color: #f0ad4e;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: auto;
+    padding: 1%;
+}
+
+
+/* Estilos para la ventana modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    background-color: #eeeee4;
+    margin: 20% auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+}
+#cerrarModal {
+    margin-top: 10px;
+    padding: 5px 15px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .contenedor-juego2 {
+        margin-top: 7%;
+    }
+    .buttons-juego2 {
+        gap: 8%;
+        margin-top: 3%;
+    }
+    .boton-juego2-validar {
+        padding: 1.5%;
+    }
+    .boton-juego2-saltar {
+        padding: 1.5%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .contenedor-juego2 {
+        margin-top: 9%;
+    }
+    .video-container-juego2 {
+        margin-left: 4%;
+        margin-right: 4%;
+        gap: 4%;
+    }
+    .buttons-juego2 {
+        gap: 20%;
+        margin-top: 3%;
+    }
+    .boton-juego2-validar {
+        padding: 3%;
+    }
+    .boton-juego2-saltar {
+        padding: 3%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .contenedor-juego2 {
+        margin: 12% 1%;
+    }
+    .video-container-juego2 {
+        margin-left: 2%;
+        margin-right: 2%;
+        gap: 4%;
+    }
+    .buttons-juego2 {
+        gap: 20%;
+        margin-top: 3%;
+    }
+    .boton-juego2-validar {
+        padding: 3%;
+    }
+    .boton-juego2-saltar {
+        padding: 3%;
+    }
+}

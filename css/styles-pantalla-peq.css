@@ -1,0 +1,408 @@
+@media screen and (max-width: 768px) {
+    .categorias-container {
+        margin: 2%;
+        grid-template-columns: repeat(6, 1fr);
+        grid-row-gap: 3%;
+        grid-column-gap: 1%;
+        padding-bottom: 2%;
+    }
+    .img-categ {
+        max-width: auto;
+    }
+    .mensaje-final-pag {
+        margin-top: 2%;
+    }
+    /* ######### Pag categorias #zzz######## */
+    .categoria-nombre h2 {
+        text-align: center;
+    }
+    .palabras-container {
+        margin: 2% 3%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+        grid-column-gap: 2%;
+        grid-row-gap: 4%;
+    }
+    .paginacion {
+        margin-top: 7%;
+    }
+    /* ######### Pag Palabra concreta ######### */
+    .palabra-nombre h2 {
+        text-align: center;
+    }
+    .row-video {
+        flex-direction: column;
+        align-items: center;
+        gap: 1%;                /* Establece un espacio de 1% entre los videos en pantallas pequeñas */
+        margin-left: 4%;
+        margin-right: 7%;
+    }
+    .context-video-box {
+        width: 100%;             /* En pantallas pequeñas, los videos ocuparán todo el ancho */
+        height: auto;            /* Ajusta la altura de los videos automáticamente */
+        padding: 5%;
+    }
+    .mensaje-video {
+        align-content: center;
+        margin-left: 10%;
+        color:brown;
+    }
+
+    /* ######### Pagina Juegos ######### */
+    .juegos-container {
+        margin: 2%;
+    }
+    .juegos {
+        padding: 2%;
+    }
+    .juego1, .juego2 {
+        padding: 2%;
+    }
+
+    /* ######### LOGROS CONSEGUIDOS POR LOS USUARIOS ######### */
+    .insignias-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .categorias-container {
+        grid-template-columns: repeat(5, 1fr);
+        grid-row-gap: 2%;
+        grid-column-gap: 2%;
+    }
+    .img-categ {
+        max-width: auto;
+    }
+    .mensaje-final-pag {
+        margin-top: 4%;
+    }
+    .mensaje-final-pag2 {
+        margin-top: 2%;
+    }
+    /* ######### Pag categorias ######### */
+    .categoria-nombre h2 {
+        text-align: center;
+    }
+    .palabras-container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 2%;
+        grid-row-gap: 4%;
+        margin: 0% 4%;
+    }
+    .paginacion {
+        margin-top: 14%;
+    }
+    /* ######### Pag Palabra concreta ######### */
+    .palabra-nombre h2 {
+        text-align: center;
+    }
+    .row-video {
+        flex-direction: column;
+        align-items: center;
+        gap: 1%;
+    }
+    .context-video-box {
+        width: 100%;
+        padding: 5%;
+    }
+    .mensaje-video {
+        align-content: center;
+        margin-left: 10%;
+        color:brown;
+    }
+    .row-dactilologico img {
+        margin: 1% 1%;
+        border-radius: 8px;
+        width: 20%;
+    }
+
+    /* ######### Pagina Juegos ######### */
+    .juegos-container {
+        margin: 3%;
+    }
+    .juegos {
+        padding: 2%;
+    }
+    .juego1, .juego2 {
+        padding: 2%;
+    }
+
+    /* ######### LOGROS CONSEGUIDOS POR LOS USUARIOS ######### */
+    .insignias-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .categorias-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 2%;
+        grid-column-gap: 2%;
+    }
+    .img-categ {
+        max-width: auto;
+    }
+    .mensaje-final-pag {
+        margin-top: 8%;
+    }
+    /* ######### Pag categorias ######### */
+    .categoria-nombre h2 {
+        text-align: center;
+    }
+    .palabras-container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 2%;
+        grid-row-gap: 4%;
+        margin: 2% 4%;
+    }
+    .paginacion {
+        margin-top: 16%;
+    }
+    /* ######### Pag Palabra concreta ######### */
+    .palabra-nombre h2 {
+        text-align: center;
+    }
+    .row-video {
+        gap: 1%;
+        padding: 0% 4%;
+    }
+    .context-video-box {
+        width: 100%;
+        height: auto;
+        padding: 5%;
+    }
+    .mensaje-video {
+        align-content: center;
+        margin-left: 10%;
+        color:brown;
+    }
+    .row-dactilologico img {
+        margin: 1% 1%;
+        border-radius: 8px;
+        width: 20%;
+    }
+
+    /* ######### Pagina Juegos ######### */
+    .juegos-container {
+        margin: 3%;
+    }
+    .juegos {
+        padding: 3%;
+    }
+    .juego1, .juego2 {
+        padding: 3%;
+    }
+
+    /* ######### LOGROS CONSEGUIDOS POR LOS USUARIOS ######### */
+    .insignias-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .categorias-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 2%;
+        grid-column-gap: 2%;
+    }
+    .img-categ {
+        max-width: auto;
+    }
+    .mensaje-final-pag {
+        margin-top: 14%;
+    }
+    /* ######### Pag categorias ######### */
+    .categoria-nombre h2 {
+        text-align: center;
+    }
+    .palabras-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        grid-column-gap: 3%;
+        grid-row-gap: 2%;
+        margin: 1% 4%;
+    }
+    
+    /* ######### Pag Palabra concreta ######### */
+    .palabra-nombre h2 {
+        text-align: center;
+    }
+    .row-video {
+        padding: 0% 4%;
+    }
+    .row-video img {
+        margin-bottom: 2%;
+        border-radius: 30px;
+        max-width: 50%;
+        max-height: 50%;
+    }
+    .mensaje-video {
+        align-content: center;
+        margin-left: 10%;
+        color:brown;
+    }
+    .row-dactilologico img {
+        margin: 1% 1%;
+        border-radius: 8px;
+        width: 20%;
+    }
+
+    /* ######### Pagina Juegos ######### */
+    .juegos-container {
+        margin: 3%;
+    }
+    .juegos {
+        padding: 4%;
+    }
+    .juego1, .juego2 {
+        padding: 4%;
+    }
+
+    /* ######### LOGROS CONSEGUIDOS POR LOS USUARIOS ######### */
+    .insignias-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .categorias-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 2%;
+        grid-column-gap: 3%;
+    }
+    .img-categ {
+        max-width: auto;
+    }
+    .mensaje-final-pag {
+        margin-top: 16%;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    .mensaje-final-pag2 {
+        margin-bottom: 5%;
+    }
+    /* ######### Pag categorias ######### */
+    .categoria-nombre h2 {
+        text-align: center;
+    }
+    .palabras-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        grid-column-gap: 3%;
+        grid-row-gap: 3%;
+        margin: 0% 5%;
+    }
+    .paginacion {
+        margin-top: 24%;
+    }
+    /* ######### Pag Palabra concreta ######### */
+    .palabra-nombre h2 {
+        text-align: center;
+    }
+    .row-video {
+        gap: 1%;
+        padding: 0% 4%;
+    }
+    .mensaje-video {
+        align-content: center;
+        margin-left: 10%;
+        color:brown;
+    }
+    .row-dactilologico img {
+        margin: 1.5% 1%;
+        border-radius: 8px;
+        width: 20%;
+    }
+
+    /* ######### Pagina Juegos ######### */
+    .juegos-container {
+        margin: 4%;
+    }
+    .juegos {
+        padding: 4%;
+    }
+    .juego1, .juego2 {
+        padding: 4%;
+    }
+
+    /* ######### LOGROS CONSEGUIDOS POR LOS USUARIOS ######### */
+    .insignias-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .categorias-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 1%;
+        grid-column-gap: 3%;
+    }
+    .img-categ {
+        max-width: auto;
+    }
+    .mensaje-final-pag {
+        padding-top: 10%;
+    }
+    /* ######### Pag categorias ######### */
+    .categoria-nombre h2 {
+        text-align: center;
+    }
+    .palabras-container {
+        margin: 0% 6%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        grid-column-gap: 4%;
+        grid-row-gap: 2%;
+    }
+    .paginacion {
+        margin-top: 46%;
+    }
+    /* ######### Pag Palabra concreta ######### */
+    .palabra-nombre h2 {
+        text-align: center;
+    }
+    .row-video {
+        gap: 1%;
+        padding: 0% 4%;
+    }
+    .mensaje-video {
+        align-content: center;
+        margin-left: 10%;
+        color:brown;
+    }
+    .row-dactilologico img {
+        border-radius: 8px;
+        width: 22%;
+    }
+
+    /* ######### Pagina Juegos ######### */
+    .juegos-container {
+        margin: 4%;
+    }
+    .juegos {
+        padding: 4%;
+    }
+    .juego1, .juego2 {
+        padding: 4%;
+    }
+
+    /* ######### LOGROS CONSEGUIDOS POR LOS USUARIOS ######### */
+    .insignias-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

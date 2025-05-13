@@ -1,0 +1,209 @@
+.bienvenida-container {
+    margin: 2%;
+}
+.bienvenida-info {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5%;
+}
+.bienvenida-info h3 {
+    color: #333;
+    font-size: 25px;
+}
+
+.bienvenida-info table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.bienvenida-info th, td {
+    border: 1px solid #ddd;
+    padding: 0.5%;
+    text-align: left;
+    word-wrap: break-word;
+}
+.bienvenida-info th {
+    background-color: #009688;
+    color: white;
+}
+.bienvenida-info td a {
+    color: #009688;
+    text-decoration: none;
+    font-weight: bold;
+}
+.bienvenida-info td a:hover {
+    text-decoration: underline;
+}
+
+/* Filas alternas */
+.bienvenida-info tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.bienvenida-info tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+th:nth-child(1), td:nth-child(1) {
+    width: 10%; /* Ajuste el tamaño de la primera columna (Palabra) */
+}
+th:nth-child(3), td:nth-child(3) {
+    width: 5%; /* Ajuste el tamaño de la primera columna (Videos) */
+}
+th:nth-child(4), td:nth-child(4) {
+    width: 7%; /* Ajuste el tamaño de la primera columna (Aciertos) */
+}
+
+.aciertos {
+    text-align: center;
+}
+/* Estilos para los aciertos */
+.nivel-bajo {
+    background-color: #ff7373;
+    color: white;
+}
+
+.nivel-medio {
+    background-color: #ffb95d;
+    color: white;
+}
+
+.nivel-alto {
+    background-color: #7fdb82;
+    color: white;
+}
+
+/* Estilo solo para la columna de aciertos */
+.bienvenida-info td.aciertos {
+    font-weight: bold;
+}
+
+.bienvenida-info .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en dispositivos táctiles */
+    margin: 10px 0; /* Espaciado alrededor de la tabla */
+}
+
+.seleccion-categoria {
+    margin: 0.5% 0%;
+}
+@media screen and (max-width: 1024px) {
+    .bienvenida-info {
+        padding: 2%;
+    }
+    .bienvenida-info th, td {
+        padding: 1%;
+    }
+    th:nth-child(1), td:nth-child(1) {
+        width: 18%; /* Ajuste el tamaño de la primera columna (Palabra) */
+    }
+    th:nth-child(3), td:nth-child(3) {
+        width: 14%; /* Ajuste el tamaño de la primera columna (Videos) */
+    }
+    th:nth-child(4), td:nth-child(4) {
+        width: 12%; /* Ajuste el tamaño de la primera columna (Aciertos) */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bienvenida-info {
+        padding: 2%;
+    }
+    .bienvenida-info th, td {
+        padding: 1%;
+    }
+    th:nth-child(1), td:nth-child(1) {
+        width: 18%; /* Ajuste el tamaño de la primera columna (Palabra) */
+    }
+    th:nth-child(3), td:nth-child(3) {
+        width: 9%; /* Ajuste el tamaño de la primera columna (Videos) */
+    }
+    th:nth-child(4), td:nth-child(4) {
+        width: 12%; /* Ajuste el tamaño de la primera columna (Aciertos) */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bienvenida-info {
+        padding: 2%;
+    }
+    .bienvenida-info th, td {
+        padding: 1% 1.5%;
+    }
+    th:nth-child(1), td:nth-child(1) {
+        width: 22%;
+    }
+    th:nth-child(3), td:nth-child(3) {
+        width: 11%;
+    }
+    th:nth-child(4), td:nth-child(4) {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .bienvenida-info {
+        padding: 2%;
+    }
+    .bienvenida-info th, td {
+        padding: 1%;
+    }
+    th:nth-child(1), td:nth-child(1) {
+        width: 24%;
+    }
+    th:nth-child(3), td:nth-child(3) {
+        width: 12%;
+    }
+    th:nth-child(4), td:nth-child(4) {
+        width: 17%;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .bienvenida-info {
+        padding: 2%;
+    }
+    .bienvenida-info th, td {
+        padding: 1%;
+    }
+    th:nth-child(1), td:nth-child(1) {
+        width: 26%;
+    }
+    th:nth-child(3), td:nth-child(3) {
+        width: 14%;
+    }
+    th:nth-child(4), td:nth-child(4) {
+        width: 19%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .bienvenida-info {
+        padding: 2%;
+    }
+    .bienvenida-info th, td {
+        padding: 1%;
+    }
+    th:nth-child(1), td:nth-child(1) {
+        width: 30%;
+    }
+    th:nth-child(3), td:nth-child(3) {
+        width: 18%;
+    }
+    th:nth-child(4), td:nth-child(4) {
+        width: 24%;
+    }
+    .seleccion-categoria {
+        margin: 1% 0%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .bienvenida-info {
+        padding: 2%;
+    }
+    .bienvenida-info th, td {
+        padding: 1%;
+    }
+}

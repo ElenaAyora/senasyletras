@@ -1,0 +1,356 @@
+/* ######### VENTANA DE MENSAJES DE USUARIOS ######### */
+/* Listado de mensajes enviados por el usuario */
+.mensajes-container {
+    margin: 2%;
+}
+
+.mensajes {
+    padding: 1%;
+    background-color: white;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+.header-mensajes {
+    display: flex; /* Activa el modo flexbox */
+    justify-content: space-between; /* Coloca los elementos en extremos opuestos */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    margin-bottom: 1%;
+}
+
+.new-mensaje-botton {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffd399;
+    width: auto;
+    padding: 1%;
+}
+
+/* Tabla en la que se listan todos los mensajes del usuario */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Estilo de las celdas */
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.5%;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+/* Encabezados de la tabla */
+th {
+    background-color: #329bd7;
+    color: white;
+    font-weight: bold;
+}
+
+/* Filas alternas */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Resaltar fila al pasar el mouse */
+tbody tr:hover {
+    background-color: #e6f7ff;
+    cursor: pointer;
+}
+
+/* Ajustar el ancho de las columnas específicas */
+th:nth-child(1), td:nth-child(1) { /* Primera columna (Fecha de Envío) */
+    width: 13%;
+}
+th:nth-child(2), td:nth-child(2) { /* Primera columna (Fecha de Respuesta) */
+    width: 13%;
+}
+th:nth-child(3), td:nth-child(3) { /* Segunda columna (Usuario) */
+    width: 6%;
+}
+th:nth-child(5), td:nth-child(5) { /* Segunda columna (Estado) */
+    width: 6%;
+}
+
+@media screen and (max-width: 1024px) {
+    th:nth-child(1), td:nth-child(1) {
+        width: 17%;
+    }
+    th:nth-child(2), td:nth-child(2) {
+        width: 17%;
+    }
+    th:nth-child(3), td:nth-child(3) {
+        width: 8%;
+    }
+    th:nth-child(5), td:nth-child(5) {
+        width: 8%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .new-mensaje-botton {
+        padding: 1.5%;
+    }
+    th, td {
+        padding: 1%;
+    }
+    th:nth-child(1), td:nth-child(1) {
+        width: 14%;
+    }
+    th:nth-child(2), td:nth-child(2) {
+        width: 14%;
+    }
+    th:nth-child(3), td:nth-child(3) {
+        width: 11%;
+    }
+    th:nth-child(5), td:nth-child(5) {
+        width: 11%;
+    }
+    /* Detalles del mensaje */
+    .mensaje-detalle-container {
+        padding: 2%;
+    }
+    .info-detalles-mensaje {
+        padding: 1%;
+    }
+    .respuesta {
+        padding: 2%;
+        margin: 1% 0%;
+    }
+
+    /* ######### Mensaje del usuario para el administrador ######### */
+    .contenedor-mensaje {
+        padding: 1.5%;
+    }
+    .mensaje {
+        padding: 1.5%;
+        margin-bottom: 0.5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .new-mensaje-botton {
+        padding: 1.5%;
+    }
+    th, td {
+        padding: 2%;
+    }
+    th:nth-child(1), td:nth-child(1) {
+        width: 17%;
+    }
+    th:nth-child(2), td:nth-child(2) {
+        width: 17%;
+    }
+    th:nth-child(3), td:nth-child(3) {
+        width: 13%;
+    }
+    th:nth-child(5), td:nth-child(5) {
+        width: 14%;
+    }
+    /* Detalles del mensaje */
+    .mensaje-detalle-container {
+        padding: 2%;
+    }
+    .info-detalles-mensaje {
+        padding: 2%;
+    }
+    .respuesta {
+        padding: 2%;
+        margin: 1% 0%;
+    }
+    .respuesta-botton {
+        padding: 1.5%;
+    }
+    .close-button {
+        padding: 1.5%;
+    }
+
+    /* ######### Mensaje del usuario para el administrador ######### */
+    .contenedor-mensaje {
+        padding: 2%;
+    }
+    .mensaje {
+        padding: 2%;
+        margin-bottom: 1%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .new-mensaje-botton {
+        padding: 2%;
+    }
+    .mensajes {
+        padding: 2%;
+    }
+    th, td {
+        padding: 1%;
+    }
+    th:nth-child(1), td:nth-child(1) {
+        width: 21%;
+    }
+    th:nth-child(2), td:nth-child(2) {
+        width: 21%;
+    }
+    th:nth-child(3), td:nth-child(3) {
+        width: 16%;
+    }
+    th:nth-child(5), td:nth-child(5) {
+        width: 16%;
+    }
+
+    /* Detalles del mensaje */
+    .mensaje-detalle-container {
+        padding: 2%;
+    }
+    .info-detalles-mensaje {
+        padding: 2%;
+    }
+    .respuesta {
+        padding: 2%;
+        margin: 1% 0%;
+    }
+    .respuesta-botton {
+        padding: 2%;
+    }
+    .close-button {
+        padding: 2%;
+    }
+
+    /* ######### Mensaje del usuario para el administrador ######### */
+    .contenedor-mensaje {
+        padding: 2%;
+    }
+    .mensaje {
+        padding: 2%;
+        margin-bottom: 1%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .new-mensaje-botton {
+        padding: 2%;
+    }
+    .mensajes {
+        padding: 2%;
+    }
+    th, td {
+        padding: 1%;
+    }
+    th:nth-child(1), td:nth-child(1) {
+        width: 24%;
+    }
+    th:nth-child(2), td:nth-child(2) {
+        width: 24%;
+    }
+    th:nth-child(3), td:nth-child(3) {
+        width: 18%;
+    }
+
+    /* Detalles del mensaje */
+    .mensaje-detalle-container {
+        padding: 3%;
+    }
+    .info-detalles-mensaje {
+        padding: 3%;
+    }
+    .respuesta {
+        padding: 4%;
+        margin: 1% 0%;
+    }
+    .respuesta-botton {
+        padding: 3%;
+    }
+    .close-button {
+        padding: 3%;
+    }
+
+    /* ######### Mensaje del usuario para el administrador ######### */
+    .contenedor-mensaje {
+        padding: 3%;
+    }
+    .mensaje {
+        padding: 2%;
+        margin-bottom: 1%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .new-mensaje-botton {
+        padding: 2.5%;
+    }
+    .mensajes {
+        padding: 3%;
+    }
+    th, td {
+        padding: 1%;
+    }
+
+    /* Detalles del mensaje */
+    .mensaje-detalle-container {
+        padding: 3%;
+    }
+    .info-detalles-mensaje {
+        padding: 3%;
+    }
+    .respuesta {
+        padding: 4%;
+        margin: 1% 0%;
+    }
+    .respuesta-botton {
+        padding: 3%;
+    }
+    .close-button {
+        padding: 3%;
+    }
+
+    /* ######### Mensaje del usuario para el administrador ######### */
+    .contenedor-mensaje {
+        padding: 2%;
+    }
+    .mensaje {
+        padding: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .new-mensaje-botton {
+        padding: 2%;
+    }
+    .mensajes {
+        padding: 3%;
+    }
+    th, td {
+        padding: 1.5%;
+    }
+
+    /* Detalles del mensaje */
+    .mensaje-detalle-container {
+        padding: 3%;
+    }
+    .info-detalles-mensaje {
+        padding: 3%;
+    }
+    .respuesta {
+        padding: 4%;
+        margin-bottom: 1% 0%;
+    }
+    .respuesta-botton {
+        padding: 3%;
+    }
+    .close-button {
+        padding: 3%;
+    }
+
+    /* ######### Mensaje del usuario para el administrador ######### */
+    .contenedor-mensaje {
+        padding: 2%;
+    }
+    .mensaje {
+        padding: 2%;
+        margin-bottom: 1%;
+    }
+}
